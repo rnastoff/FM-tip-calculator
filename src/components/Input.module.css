@@ -1,0 +1,54 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup:nth-child(2) {
+  margin-top: 50px;
+}
+
+.inputTextAndError {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputText {
+  color: #65797a;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.errorText {
+  color: #d46f65;
+}
+
+.inputAndIcon {
+  position: relative;
+}
+.inputNumber {
+  background: #f3f8fb;
+  border: none;
+  border-radius: 5px;
+  height: 48px;
+  outline: none;
+  padding: 20px;
+  text-align: right;
+  width: 100%;
+}
+
+.inputNumber:active,
+.inputNumber:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.inputNumber[type="text"] {
+  color: hsl(183, 100%, 15%);
+  font-size: 25px;
+}
+
+.icon {
+  position: absolute;
+  width: 12px;
+  left: 1rem;
+  top: 15px;
+}

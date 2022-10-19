@@ -1,0 +1,44 @@
+.tipResultsContainer {
+  background: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 50px 40px;
+  height: 100%;
+  width: 100%;
+}
+
+.resetBTN {
+  all: unset;
+  background: hsl(172, 67%, 45%);
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  transition: all ease 0.25s;
+}
+
+.resetBTN:hover {
+  background: #9fe8df;
+  transition: all ease 0.25s;
+}
+
+.resetBTN:disabled,
+.resetBTN[disabled] {
+  background: #0d686d;
+  color: hsl(183, 100%, 15%);
+}
+
+@media (max-width: 936px) {
+  .tipResultsContainer {
+    margin-bottom: 1.4rem;
+    margin-top: -0.8rem;
+    padding: 2.4rem 1.4rem 1.4rem 1.4rem;
+  }
+
+  .resetBTN {
+    margin-top: 0px;
+  }
+}

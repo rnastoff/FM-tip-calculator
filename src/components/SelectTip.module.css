@@ -1,0 +1,95 @@
+.selectTip {
+  margin-top: 36px;
+  width: 100%;
+}
+
+.selectTipText {
+  color: #65797a;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.selectTipButtonGroup {
+  /* border: 1px solid red; */
+}
+
+.selectTipButton {
+  background: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  height: 48px;
+  width: 115px;
+  margin-bottom: 1rem;
+  vertical-align: middle;
+  margin-left: 0.9rem;
+  transition: all ease 0.25s;
+}
+
+.selectTipButton:hover {
+  background: #9fe8df;
+  color: hsl(183, 100%, 15%);
+  transition: all ease 0.25s;
+}
+.selectTipButton:nth-child(1),
+.selectTipButton:nth-child(4) {
+  margin-left: 0rem;
+}
+
+.selectTipButtonActive {
+  background: hsl(172, 67%, 45%);
+}
+
+.selectTipInput {
+  background: #f3f8fb;
+  border: none;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  margin-bottom: 1rem;
+  outline: none;
+  line-height: 24px;
+  height: 48px;
+  width: 115px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 10px;
+  margin-left: 0.9rem;
+}
+
+.selectTipInput:active,
+.selectTipInput:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.selectTipInput::placeholder {
+  color: #65797a;
+  font-size: 24px;
+  text-align: center;
+}
+
+/************************************ MEDIA QUERY ************************************/
+@media (max-width: 936px) {
+  .selectTip {
+    margin-top: 28px;
+  }
+
+  .selectTipButton {
+    margin-left: 0px;
+  }
+  .selectTipButton:nth-child(2),
+  .selectTipButton:nth-child(4) {
+    margin-left: 1rem;
+  }
+
+  .selectTipButton {
+    width: 147px;
+  }
+
+  .selectTipInput {
+    margin-left: 1rem;
+    width: 147px;
+  }
+}

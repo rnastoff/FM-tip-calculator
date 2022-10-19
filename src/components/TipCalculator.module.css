@@ -1,0 +1,75 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 75px;
+}
+
+h1 {
+  color: hsl(183, 100%, 15%);
+  font-size: 26px;
+  letter-spacing: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 1.8rem;
+  display: flex;
+  height: 30rem;
+  width: 57.5rem;
+}
+
+.sectionForm {
+  /* border: 1px solid red; */
+  padding: 2.8rem 2.1rem 2.8rem 3rem;
+  width: 50%;
+}
+
+.sectionResults {
+  /* border: 1px solid green; */
+  padding: 2rem 1.4rem;
+  width: 50%;
+}
+
+/* This is for margin-top spacing for only one of the inputs */
+.numberOfPeople {
+  margin-top: 20px;
+}
+
+.errorInputBorder {
+  border: 2px solid #d46f65 !important;
+}
+
+/************************************ MEDIA QUERY ************************************/
+@media (max-width: 936px) {
+  .title {
+    margin-top: 32px;
+    margin-bottom: 34px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 380px;
+  }
+
+  .sectionForm {
+    padding: 1.9rem 2.1rem 2.8rem 2rem;
+    width: 100%;
+  }
+
+  .sectionResults {
+    padding: 0rem 1.4rem;
+    width: 100%;
+  }
+  .numberOfPeople {
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+}
